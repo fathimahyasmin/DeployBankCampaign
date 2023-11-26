@@ -38,16 +38,8 @@ def main():
 
         # Set up the form to fill in the required data 
 
-        age = st.selectbox(
-            "Age", ['early working age', 'prime working age', 'mature working age.', 'elderly'])
-        if age == 'early working age':
-            age = 1
-        elif age == 'prime working age':
-            age = 2
-        elif age == 'mature working age':
-            age = 3
-        elif age == 'elderly':
-            age = 4
+        age = st.number_input(
+            'Age', min_value=0, max_value=110, value=0)
         
         job = st.selectbox(
             "Job", ['unemployed', 'management', 'admin.', 'technician', 'self-employed', 'services', 'blue-collar'])
@@ -170,21 +162,9 @@ def main():
         
         campaign = st.number_input(
             'Number of Contact During Campaign', min_value=large_negative_value, max_value=large_positive_value, value=0)
-        
-        pdays = st.selectbox(
-            "Number of Days From the Latest Contact", ['no prior contact', '0-3 months', '3-6 months', '6-9 months', '9-12 months', 'over a year'])
-        if pdays == 'no prior contact':
-            pdays = 0
-        elif pdays == '0-3 months':
-            pdays = 1
-        elif pdays == '3-6 months':
-            pdays = 3
-        elif pdays == '6-9 months':
-            pdays = 4
-        elif pdays == '9-12 months':
-            pdays = 5
-        elif pdays == 'over a year':
-            pdays = 6
+
+        pdays = st.number_input(
+            'Number of Days From the Latest Contact', min_value=-2, max_value=1000, value=0)
         
         day = st.number_input(
             'Date of The Latest Contact', min_value=0, max_value=31, value=0)
