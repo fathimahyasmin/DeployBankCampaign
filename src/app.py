@@ -5,6 +5,7 @@ from PIL import Image
 from preprocessing import *
 from pycaret.classification import *
 
+
 # Load the model
 model = load_model('model/LightGBM')
 
