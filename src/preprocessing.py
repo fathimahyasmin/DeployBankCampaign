@@ -74,4 +74,4 @@ class Cleaning(BaseEstimator, TransformerMixin):
                                'secondary': 2, 
                                'tertiary': 3}, inplace = True)
 
-        return X.to_numpy()
+        return X

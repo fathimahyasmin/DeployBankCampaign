@@ -7,7 +7,7 @@ from pycaret.classification import *
 
 
 # Load the model
-model = load_model('./model/LightGBM')
+model = load_model('model/LightGBM')
 
 @st.cache_data
 def convert_df(df):
@@ -20,7 +20,7 @@ def predict(model, input_df):
 
 def main():
     # Load picture
-    image_side = Image.open('./img/bank_campaign.jpg')
+    image_side = Image.open('img/bank_campaign.jpg')
 
     # Add option to select online or offline prediction
     add_selectbox = st.sidebar.selectbox(
