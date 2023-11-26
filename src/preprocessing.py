@@ -35,7 +35,6 @@ class Cleaning(BaseEstimator, TransformerMixin):
         equal_freq = KBinsDiscretizer(n_bins = 5, encode = 'ordinal', strategy='quantile')
         equal_freq.set_output(transform='pandas')
         equal_freq.fit(X[['campaign']])
-        # X['campaign'] = pd.qcut(X['campaign'], q=4, labels=['low frequency', 'medium frequency', 'high frequency', 'very high frequency'])
 
         # HANDLE PROBLEMS IN CATEGORICAL COLUMNS
         # ---------------------------------------
