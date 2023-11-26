@@ -2,12 +2,12 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 from PIL import Image
-from preprocessing import *
+from preprocessing import Cleaning
 from pycaret.classification import *
 
 
 # Load the model
-model = load_model('model/LightGBM')
+model = load_model('./model/LightGBM')
 
 @st.cache_data
 def convert_df(df):
@@ -20,7 +20,7 @@ def predict(model, input_df):
 
 def main():
     # Load picture
-    image_side = Image.open('img/bank-campaign.jpg')
+    image_side = Image.open('./img/bank_campaign.jpg')
 
     # Add option to select online or offline prediction
     add_selectbox = st.sidebar.selectbox(
@@ -68,12 +68,12 @@ def main():
 
         marital = st.selectbox(
             "Marital Status", ['married', 'single', 'divorced'])
-        if job == 'married':
-            job = 1
-        elif job == 'single':
-            job = 2
-        elif job == 'divorced':
-            job = 3
+        if marital == 'married':
+            marital = 1
+        elif marital == 'single':
+            marital = 2
+        elif marital == 'divorced':
+            marital = 3
 
         education = st.selectbox(
             "Education", ['unknown', 'primary', 'secondary', 'tertiary'])
@@ -86,8 +86,11 @@ def main():
         elif education == 'tertiary':
             education = 4
 
+        large_negative_value = -1000000000
+        large_positive_value = 1000000000 
+
         balance = st.number_input(
-            'Balance', min_value=-np.inf, max_value=np.inf, value=0)
+            'Balance', min_value=large_negative_value, max_value=large_positive_value, value=0)
         
         housing_choice = {
             0: 'No', 
@@ -142,7 +145,6 @@ def main():
             11: 'nov',
             12: 'dec'
         }
-
         month = st.selectbox(
             "Last Contact Month", 
             month_choice.keys(), 
@@ -161,13 +163,13 @@ def main():
             poutcome = 4
 
         duration = st.number_input(
-            'Contact Duration', min_value=0, max_value=np.inf, value=0)
+            'Contact Duration', min_value=large_negative_value, max_value=large_positive_value, value=0)
         
         previous = st.number_input(
-            'Number of Contact Before Campaign', min_value=0, max_value=np.inf, value=0)
+            'Number of Contact Before Campaign', min_value=large_negative_value, max_value=large_positive_value, value=0)
         
         campaign = st.number_input(
-            'Number of Contact During Campaign', min_value=0, max_value=np.inf, value=0)
+            'Number of Contact During Campaign', min_value=large_negative_value, max_value=large_positive_value, value=0)
         
         pdays = st.selectbox(
             "Number of Days From the Latest Contact", ['no prior contact', '0-3 months', '3-6 months', '6-9 months', '9-12 months', 'over a year'])
@@ -192,29 +194,30 @@ def main():
 
         input_df = pd.DataFrame([
                 {
-                    'Age': age,
-                    'Job': job,
-                    'Marital Status': marital,
-                    'Education': education,
-                    'Balance': balance,
-                    'Mortgage Loan': housing,
-                    'Personal Loan': loan,
-                    'Default': default,
-                    'Contact': contact,
-                    'Last Contact Month': month,
-                    'Previous Campaign Outcome': poutcome,
-                    'Contact Duration': duration,
-                    'Number of Contact Before Campaign': previous,
-                    'Number of Contact During Campaign': campaign,
-                    'Number of Days From The Latest Contact': pdays,
-                    'Date of the Latest Contact' : day
+                    'age': age,
+                    'job': job,
+                    'marital': marital,
+                    'education': education,
+                    'balance': balance,
+                    'housing': housing,
+                    'loan': loan,
+                    'default': default,
+                    'contact': contact,
+                    'month': month,
+                    'poutcome': poutcome,
+                    'duration': duration,
+                    'previous': previous,
+                    'campaign': campaign,
+                    'pdays': pdays,
+                    'day' : day
                 }
             ]
         )
 
-        input_df = model[0:4].transform(input_df)
+        input_df = Cleaning().transform(input_df)
 
         # Make a prediction 
+
         if st.button("Predict"):
             # st.write(input_df)
             output = model.predict(input_df)

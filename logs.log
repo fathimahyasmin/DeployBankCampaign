@@ -38,3 +38,139 @@
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2023-11-26 11:40:53,707:INFO:Initializing load_model()
 2023-11-26 11:40:53,707:INFO:load_model(model_name=model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 13:29:11,040:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:11,056:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:11,056:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:11,056:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:11,779:INFO:Initializing load_model()
+2023-11-26 13:29:11,779:INFO:load_model(model_name=../model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 13:29:42,938:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:42,938:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:42,938:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:42,938:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:29:43,647:INFO:Initializing load_model()
+2023-11-26 13:29:43,647:INFO:load_model(model_name=../model/LightGBM.pkl, platform=None, authentication=None, verbose=True)
+2023-11-26 13:30:01,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:01,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:01,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:01,302:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:01,986:INFO:Initializing load_model()
+2023-11-26 13:30:01,986:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 13:30:19,656:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:19,656:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:19,656:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:19,656:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:30:20,396:INFO:Initializing load_model()
+2023-11-26 13:30:20,396:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 13:33:42,398:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:42,398:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:42,398:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:42,398:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:43,121:INFO:Initializing load_model()
+2023-11-26 13:33:43,121:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 13:33:53,300:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:53,300:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:53,300:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:53,300:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:33:53,960:INFO:Initializing load_model()
+2023-11-26 13:33:53,960:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 13:46:06,252:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:46:06,252:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:46:06,252:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:46:06,252:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:46:06,919:INFO:Initializing load_model()
+2023-11-26 13:46:06,919:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 13:51:39,317:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:51:39,317:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:51:39,317:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:51:39,317:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 13:51:40,104:INFO:Initializing load_model()
+2023-11-26 13:51:40,104:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 14:01:01,829:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:01:01,830:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:01:01,830:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:01:01,830:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:01:02,674:INFO:Initializing load_model()
+2023-11-26 14:01:02,674:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 14:03:20,644:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:20,645:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:20,645:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:20,645:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:21,410:INFO:Initializing load_model()
+2023-11-26 14:03:21,410:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 14:03:38,323:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:38,323:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:38,323:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:38,323:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:03:39,096:INFO:Initializing load_model()
+2023-11-26 14:03:39,096:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 14:11:52,505:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:11:52,505:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:11:52,505:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:11:52,505:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:11:53,273:INFO:Initializing load_model()
+2023-11-26 14:11:53,273:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 14:11:53,665:WARNING:C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\preprocessing\_discretization.py:245: UserWarning: Feature 0 is constant and will be replaced with 0.
+  warnings.warn(
+
+2023-11-26 14:12:10,593:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:12:10,593:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:12:10,593:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:12:10,593:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-26 14:12:11,274:INFO:Initializing load_model()
+2023-11-26 14:12:11,274:INFO:load_model(model_name=./model/LightGBM, platform=None, authentication=None, verbose=True)
+2023-11-26 14:12:11,704:WARNING:C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\preprocessing\_discretization.py:245: UserWarning: Feature 0 is constant and will be replaced with 0.
+  warnings.warn(
+
