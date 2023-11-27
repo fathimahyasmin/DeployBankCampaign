@@ -43,116 +43,36 @@ def main():
         
         job = st.selectbox(
             "Job", ['unemployed', 'management', 'admin.', 'technician', 'self-employed', 'services', 'blue-collar'])
-        if job == 'unemployed':
-            job = 1
-        elif job == 'management':
-            job = 2
-        elif job == 'admin.':
-            job = 3
-        elif job == 'technician':
-            job = 4
-        elif job == 'self-employed':
-            job = 5
-        elif job == 'services':
-            job = 6
-        elif job == 'blue-collar':
-            job = 7
 
         marital = st.selectbox(
             "Marital Status", ['married', 'single', 'divorced'])
-        if marital == 'married':
-            marital = 1
-        elif marital == 'single':
-            marital = 2
-        elif marital == 'divorced':
-            marital = 3
 
         education = st.selectbox(
             "Education", ['unknown', 'primary', 'secondary', 'tertiary'])
-        if education == 'unknown':
-            education = 1
-        elif education == 'primary':
-            education = 2
-        elif education == 'secondary':
-            education = 3
-        elif education == 'tertiary':
-            education = 4
 
         large_negative_value = -1000000000
         large_positive_value = 1000000000 
 
         balance = st.number_input(
             'Balance', min_value=large_negative_value, max_value=large_positive_value, value=0)
-        
-        housing_choice = {
-            0: 'No', 
-            1: 'Yes',
-        }
+
         housing = st.selectbox(
-            "Mortgage Loan", 
-            housing_choice.keys(), 
-            format_func=lambda x: housing_choice[x],
-            )
+            "Mortgage Loan", ['Yes', 'No'])
         
-        loan_choice = {
-            0: 'No', 
-            1: 'Yes',
-        }
         loan = st.selectbox(
-            "Personal Loan", 
-            loan_choice.keys(), 
-            format_func=lambda x: loan_choice[x],
-            )
+            "Personal Loan", ['Yes', 'No'])
         
-        default_choice = {
-            0: 'No', 
-            1: 'Yes',
-        }
         default = st.selectbox(
-            "Default", 
-            default_choice.keys(), 
-            format_func=lambda x: default_choice[x],
-            )
+            "Default", ['Yes', 'No'])
         
         contact = st.selectbox(
             "Contact", ['cellular', 'telephone', 'unknown'])
-        if contact == 'cellular':
-            contact = 1
-        elif contact == 'telephone':
-            contact = 2
-        elif contact == 'unknown':
-            contact = 3
 
-        month_choice = {
-            1: 'jan', 
-            2: 'feb',
-            3: 'mar',
-            4: 'apr',
-            5: 'may',
-            6: 'jun',
-            7: 'jul',
-            8: 'aug',
-            9: 'sep',
-            10: 'okt',
-            11: 'nov',
-            12: 'dec'
-        }
         month = st.selectbox(
-            "Last Contact Month", 
-            month_choice.keys(), 
-            format_func=lambda x: month_choice[x],
-            )
+            "Last Contact Month", ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'])
         
         poutcome = st.selectbox(
             "Previous Campaign Outcome", ['unknown', 'other', 'failure', 'success'])
-        if poutcome == 'unknown':
-            poutcome = 0
-        elif poutcome == 'other':
-            poutcome = 1
-        elif poutcome == 'failure':
-            poutcome = 3
-        elif poutcome == 'success':
-            poutcome = 4
 
         duration = st.number_input(
             'Contact Duration', min_value=large_negative_value, max_value=large_positive_value, value=0)
@@ -194,10 +114,7 @@ def main():
             ]
         )
 
-        input_df = Cleaning().transform(input_df)
-
         # Make a prediction 
-
         if st.button("Predict"):
             # st.write(input_df)
             output = model.predict(input_df)
